@@ -1,4 +1,4 @@
-<html> 
+<html>
 <head>
 <title>
       COM S 319 Lab : Javascript
@@ -13,29 +13,29 @@
   <fieldset>
     <legend>Contact Details</legend>
     <p>
-      <label for="custname">Name</label> 
+      <label for="custname">Name</label>
       <input id="custname" name="custname" />
-     
+
     </p>
     <p>
-      <label for="company">Company</label> 
+      <label for="company">Company</label>
       <input id="company" name="company" type="text" />
-      
+
     </p>
     <p>
-      <label for="email">Email</label> 
+      <label for="email">Email</label>
       <input id="email" name="email" type="text" />
-   
+
     </p>
     <p>
-      <label for="telephone">Telephone</label> 
+      <label for="telephone">Telephone</label>
       <input id="telephone" name="telephone" type="text" />
-    
+
     </p>
     <p>
-      <label for="website">Website</label> 
+      <label for="website">Website</label>
       <input id="website" name="website" type="text" />
-      
+
     </p>
     <p>
       <input type="button" id="submit" name="submit" value="Submit Contact Details" />
@@ -52,7 +52,7 @@
      var i;
      var s = "";
      for (i = 0; i < myForm.elements.length; i++) {
-       s += myForm.elements[i].name + "=" + myForm.elements[i].value+"\n"; 
+       s += myForm.elements[i].name + "=" + myForm.elements[i].value+"\n";
      }
      alert (s + "has been submitted!") ;
   }

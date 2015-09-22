@@ -8,20 +8,30 @@
 
   <body>
   <h1>
-    COM S 319 Lab : Javascript
+    COM S 319 Lab : Validation Form
   </h1>
-
+<!--  -->
   <form id="contactForm" action="" >
     <fieldset>
-      <legend>Contact Details</legend>
+      <legend>Validation Form</legend>
       <p>
-        <label for="custname">Name</label>
-        <input id="custname" name="custname" />
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text"/>
 
       </p>
       <p>
-        <label for="company">Company</label>
-        <input id="company" name="company" type="text" />
+        <label for="gender">Gender</label>
+        <select name="gender">
+          <option value="default">---</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+      </p>
+      <p>
+        <label for="address">Address</label>
+        <textarea name="address"></textarea>
 
       </p>
       <p>
@@ -30,18 +40,13 @@
 
       </p>
       <p>
-        <label for="telephone">Telephone</label>
-        <input id="telephone" name="telephone" type="text" />
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="text" />
 
       </p>
       <p>
-        <label for="website">Website</label>
-        <input id="website" name="website" type="text" />
-
-      </p>
-      <p>
-        <input type="button" id="submit" name="submit" value="Submit Contact Details" />
-        <input type="reset" value="clear" />
+        <input type="button" id="submit" name="submit" value="Submit" onclick="validateForm();" />
+        <input type="reset" value="Clear" />
       </p>
     </fieldset>
   </form>
